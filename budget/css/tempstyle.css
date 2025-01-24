@@ -12,6 +12,8 @@ header {
     justify-content: space-between; 
     align-items: center;
     padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 nav {
@@ -39,8 +41,40 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline; 
 }
-/* Set background image and size */
 
-.titlecontainer {
-    background-image: url('stocks.jpg');
+ .titlecontainer {
+    position: relative;
+    width: 100%; 
+    height: 400px; 
+    
+}
+
+
+.titlecontainer img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+.titlecontainer h2 {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 2rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    z-index: 1; 
+    text-align: center;
+}
+
+.titlecontainer .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.15); 
+    z-index: 0; 
 }
